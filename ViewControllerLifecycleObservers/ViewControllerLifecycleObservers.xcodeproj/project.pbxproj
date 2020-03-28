@@ -10,6 +10,7 @@
 		328D7592242F27D5003421B7 /* ViewControllerLifecycleObservers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328D7588242F27D5003421B7 /* ViewControllerLifecycleObservers.framework */; };
 		328D7597242F27D5003421B7 /* ViewControllerLifecycleObserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D7596242F27D5003421B7 /* ViewControllerLifecycleObserversTests.swift */; };
 		328D7599242F27D5003421B7 /* ViewControllerLifecycleObservers.h in Headers */ = {isa = PBXBuildFile; fileRef = 328D758B242F27D5003421B7 /* ViewControllerLifecycleObservers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		328D75A3242F2914003421B7 /* UIViewController+LifecycleObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328D75A2242F2914003421B7 /* UIViewController+LifecycleObservers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		328D7591242F27D5003421B7 /* ViewControllerLifecycleObserversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerLifecycleObserversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		328D7596242F27D5003421B7 /* ViewControllerLifecycleObserversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleObserversTests.swift; sourceTree = "<group>"; };
 		328D7598242F27D5003421B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328D75A2242F2914003421B7 /* UIViewController+LifecycleObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LifecycleObservers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				328D758B242F27D5003421B7 /* ViewControllerLifecycleObservers.h */,
 				328D758C242F27D5003421B7 /* Info.plist */,
+				328D75A2242F2914003421B7 /* UIViewController+LifecycleObservers.swift */,
 			);
 			path = ViewControllerLifecycleObservers;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					328D7587242F27D5003421B7 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					328D7590242F27D5003421B7 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328D75A3242F2914003421B7 /* UIViewController+LifecycleObservers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		328D759D242F27D5003421B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thinhle.ViewControllerLifecycleObservers;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		328D759E242F27D5003421B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		328D75A0242F27D5003421B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ViewControllerLifecycleObserversTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		328D75A1242F27D5003421B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ViewControllerLifecycleObserversTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
